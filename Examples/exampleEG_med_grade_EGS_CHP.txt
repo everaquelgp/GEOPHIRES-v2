@@ -1,0 +1,45 @@
+GEOPHIRES v2.0 Input File
+Created for the Geothermal Homework. 
+EGS Low-grade system for a power plant type single flash with an end use of:
+CHP Parallel Cycle: The geothermal fluid flow splits in two parts two
+serve an electricity generation cycle in parallel with direct-use heat, both
+at the same temperature.
+
+***Subsurface technical parameters***
+*************************************
+Reservoir Model,1,                        			---EGS Multiple parallel fractures model
+Drawdown Parameter,0.015,                           --- 1.5%/ year
+Reservoir Depth,5,                     				---[km] well depth 
+Number of Segments,1,                  				---[-]
+Gradient 1,50,                          			---[deg.C/km]
+Maximum Temperature,375,                  			---[deg.C]Maximum borehole temperature
+Number of Production Wells,4,            			---[-]
+Number of Injection Wells,1,            			---[-]
+Production Flow Rate per Well,50,       			---[kg/s]
+Water Loss Fraction,.02,					        ---water loss rate 2%
+Reservoir Impedance,0.15,                           ---Hydraulic impedancep per well-pair
+Injection Temperature,75,		 			        ---[deg.C]
+Maximum Drawdown,0.21,			  			        ---Fluid Temp. Drawdown threshold.
+
+***SURFACE TECHNICAL PARAMETERS***
+**********************************
+End-Use Option,51,			  			          ---[-] CHP Parallel Cycle
+Power Plant Type,3,			  			          ---[-] Single flash
+Circulation Pump Efficiency,.8,	  				  ---[-] geofluid pump efficiency
+Utilization Factor,.9,			  			      ---[-] capacity factor 90%
+Ambient Temperature,15,		 	                  ---[deg.C]
+
+***FINANCIAL PARAMETERS***
+**************************
+Plant Lifetime,30,			  			---[years]
+Economic Model,2,			  			---[-] Standard levelized cost model
+Discount Rate,0.07,
+
+
+
+***Simulation Parameters***
+***************************
+
+Print Output to Console,1,		  			---[-] Should be 0 (don't print results) or 1 (print results)
+Time steps per year,6,		  				---[1/year]
+
